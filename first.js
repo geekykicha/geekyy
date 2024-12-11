@@ -162,12 +162,33 @@
 
 // let result = ninjas.join(',');
 // let result = ninjas.indexOf('hero');
-// let result = ninjas.concat(['ken', 'crystal']);
+// let result = ninjas.concat(['ken', 'crystal']); // add another array
 // let result = random.push('ken');
-// let result = random.pop();
+// let result = random.pop(); // remove last element
+// let result = random.unshift(9); // add @ 1st element
+// let result = random.shift(); // remove @ 1st element
+
+// spead() muliple array in 1 array
+//let newArr = [...ninjas,...result]
+
+//diff b/w slice & splice
+//let result = ninjas.slice(0,1): // create the selected value & return new array wont effet org array
+//let result = ninjas.splice(0,1): // remove the selected value & return new array from org array
+
+// of () method used to convert indivual value into array
 
 // console.log(result);
 // console.log(ninjas);
+
+// to convert the Array data type into string use .join method
+//let newArr = random.join();
+//console.log(typeOf newArr);
+
+// to convert any data type into array
+//console.log(Array.from("krishna"))
+
+// to check d.t is an array
+//console.log(Array.isArray("krishna"))
 
 //>>>>>>>>>>>>>>>> null & undefined
 // undefined
