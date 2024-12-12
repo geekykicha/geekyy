@@ -142,6 +142,22 @@
 
 // console.log(html);
 
+// const gameName = new String('hitesh-hc-com')
+
+// console.log(gameName.charAt(2));
+// console.log(gameName.indexOf('t'));
+
+// const newString = gameName.substring(0, 4)  // not allow -ve value
+// console.log(newString);
+
+// const anotherString = gameName.slice(-8, 4) // allow -ve
+// console.log(anotherString);
+
+// const newStringOne = "   hitesh    "
+// console.log(newStringOne);
+// console.log(newStringOne.trim());  // trim white space
+
+
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ARRAYSSSSSSSSSSSSSSSSSSSSS
 
 // let ninjas = ['krishna', 'kicha', 'hero'];
@@ -170,6 +186,12 @@
 
 // spead() muliple array in 1 array
 //let newArr = [...ninjas,...result]
+
+// nested array to create new single array 
+// const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
+
+// const real_another_array = another_array.flat(Infinity)
+// console.log(real_another_array);
 
 //diff b/w slice & splice
 //let result = ninjas.slice(0,1): // create the selected value & return new array wont effet org array
@@ -539,11 +561,20 @@
 //   console.log(`hello ${person}`);
 // });
 
-//---------------------------------------------------- Object is same as in real life it consist key-value pair
+//----------------------Object is same as in real life it consist key-value pair
+// singleton
+// Object.create
+// const user = new object()
+
 // object literals
 
+// object with symbol
+// const mySym = Symbol("key1")
+
 // let user = {
-//   name: 'krishna',
+//   name: 'krishna', // name is string
+//   "full name": "krishna Mudhale", // we cant access by . op
+//    [mySym]: "mykey1",  // symbol
 //   age: 30,
 //   email: 'kicha@thenetninja.co.in',
 //   location: 'india',
@@ -552,6 +583,9 @@
 
 // console.log(user);
 // console.log(user.age);
+// console.log(user["name");
+// console.log(JsUser[mySym])
+
 
 // user.age = 35;
 // console.log(user.age);
@@ -579,7 +613,7 @@
 //     console.log('the user logged out');
 //   },
 //   logBlogs(){
-//     // access the blogs here & (this ) is global obj or window obj 
+//     // access the blogs here & (this ) is global obj or window obj used to get obj properties
 //     console.log('the user written the below blogs:');
 //     this.blogs.forEach(blog => {
 //       console.log(blog);
@@ -593,10 +627,20 @@
 // user.logout();
 
 // const name = 'kicha';
+// Object.freeze(name) // we cant access after freeze
 // name.toUpperCase();
 
 //------------------- cresting Array of Object
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
 
+// const obj3 = { obj1, obj2 }
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // methodused to combine
+
+const obj3 = {...obj1, ...obj2} // spread combine 2 arr
+// console.log(obj3);
+ 
 // const blogs= [
 //   {title:'why mac & cheese rules',likes: 30 },
 //   {title:'10 things to make with marmite',likes: 50 }
