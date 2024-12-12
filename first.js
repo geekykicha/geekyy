@@ -532,6 +532,14 @@
 // }
 // console.log(bill([10,15,30], 0.2));
 
+//REST parameter helps to excute multiple values with 1 parameter
+
+// function calculateCartPrice(val1, val2, ...num1){
+//     return num1
+// }
+
+// console.log(calculateCartPrice(200, 400, 500, 2000))
+
 //------------------- diff b/w function and method is m-associate with obj or class
 // const name = 'shaun';
 
@@ -631,16 +639,40 @@
 // name.toUpperCase();
 
 //------------------- cresting Array of Object
-const obj1 = {1: "a", 2: "b"}
-const obj2 = {3: "a", 4: "b"}
-const obj4 = {5: "a", 6: "b"}
+// const obj1 = {1: "a", 2: "b"}
+// const obj2 = {3: "a", 4: "b"}
+// const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
 // const obj3 = Object.assign({}, obj1, obj2, obj4) // methodused to combine
 
-const obj3 = {...obj1, ...obj2} // spread combine 2 arr
+//const obj3 = {...obj1, ...obj2} // spread combine 2 arr
 // console.log(obj3);
- 
+
+
+// const users = [
+//     {
+//         id: 1,
+//         email: "h@gmail.com"
+//     },
+//     {
+//         id: 1,
+//         email: "h@gmail.com"
+//     },
+//     {
+//         id: 1,
+//         email: "h@gmail.com"
+//     },
+// ]
+
+// users[1].email
+// console.log(tinderUser);
+
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 // const blogs= [
 //   {title:'why mac & cheese rules',likes: 30 },
 //   {title:'10 things to make with marmite',likes: 50 }
@@ -679,6 +711,21 @@ const obj3 = {...obj1, ...obj2} // spread combine 2 arr
 
 // const name = 'kicha';
 // name.toUpperCase();
+
+
+// const course = {
+//     coursename: "js in hindi",
+//     price: "999",
+//     courseInstructor: "hitesh"
+// }
+
+// course.courseInstructor
+
+//============== de-structuring of the obj
+// const {courseInstructor: instructor} = course
+
+// console.log(courseInstructor);
+// console.log(instructor);
 
 //////////////////////////////// Math obj
 // console.log(Math);
