@@ -463,6 +463,18 @@
 // };
 // krishna();
 
+// Immidiate invoke function expressions [ IIFE ] = execute just after the expression & to avoid global scopic var pollution
+// wrapping ( ) to the function & invoke without fun name ( ) ( )
+
+regular fun
+(function bike() { // named IIFE
+  console.log("kicha")
+}) (); // must close fun with ;
+
+Arrow fun
+( (name) => {
+   console.log(`name is ${name}`)
+} ("kicha);
 //-------------------------- ARGUMENT & PARAMETERS
 // here work is parameter & helping is agrument
 // const krishna = function(work = 'helping',time = 'everytime'){
@@ -493,7 +505,14 @@
 //   return 3.14 * radius**2;
 // }
 
-// arrow function
+// Implicit (assum return) arrow function
+// whenever we use { } must use return keyword & ( ) not required
+
+// to return an obj = assign in ( )
+
+// cont addTwo = (num1 + num2) => {(name: "kicha")}
+
+
 // const calcArea = radius => 3.14 * radius**2;
 
 // const area = calcArea(5);
@@ -539,6 +558,22 @@
 // }
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))
+
+// ========= diff b/w regular fun & arrow fun
+
+// function bike() {
+//    let name = "kicha"
+
+//     console.log(this); // here this refers to window obj & allow argument
+// }
+// bike();
+
+// const bike = () => {
+//     let name = "kicha"
+//     console.log(this); // refer empty { } & not allow arg
+    
+// }
+// bike();
 
 //------------------- diff b/w function and method is m-associate with obj or class
 // const name = 'shaun';
