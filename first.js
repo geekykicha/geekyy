@@ -407,6 +407,15 @@
 //   }
 // }
 
+// falsy value 
+// false, null, undefind, 0, -0, Nan, "", BigInt 0n
+
+// Truthy value
+// true, [], "0", '0', " ", {}, function() {}
+// false == 0 - true
+// false == '' - true
+// 0 == '' - true
+
 // ------------------------switch statements its strict equality checker
 // const grade = 'D';
 
@@ -429,6 +438,9 @@
 //   default:
 //     console.log('not a valid grade');
 // }
+
+// continue skip the condition & execute loop
+
 // variables & block scope
 //glpbal scope
 // let age = 30;
@@ -448,7 +460,19 @@
 
 // console.log('outside code block:', age, name);
 
-//------------------------------ Function() block of code that performs tasks & can be called anywhere from the prog
+// NULLISH COALESCING OPERATOR (??): NULL UNDEFIND
+//  it checks the safety of null value
+// let val = 5 ?? 10;
+// let val = null ?? 10;
+// let val = undefind ?? 10;
+
+// // TERNARY OPERATOR - ?
+// condition ? true : false
+// const banana = 50
+// banana >= 30 ? console.log("less than 50") : console.log("more than 50")
+
+//---------=====================================
+// Function() block of code that performs tasks & can be called anywhere from the prog
 //  also it is not associated with any objrct or class
 
 // function declaration - in this function is not stored in var
@@ -466,15 +490,15 @@
 // Immidiate invoke function expressions [ IIFE ] = execute just after the expression & to avoid global scopic var pollution
 // wrapping ( ) to the function & invoke without fun name ( ) ( )
 
-regular fun
-(function bike() { // named IIFE
-  console.log("kicha")
-}) (); // must close fun with ;
+// regular fun
+// (function bike() { // named IIFE
+//   console.log("kicha")
+// }) (); // must close fun with ;
 
-Arrow fun
-( (name) => {
-   console.log(`name is ${name}`)
-} ("kicha);
+// Arrow fun
+// ( (name) => {
+//    console.log(`name is ${name}`)
+// } ("kicha);
 //-------------------------- ARGUMENT & PARAMETERS
 // here work is parameter & helping is agrument
 // const krishna = function(work = 'helping',time = 'everytime'){
