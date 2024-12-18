@@ -302,6 +302,64 @@
 //   console.log(html);
 // }
 
+
+// FOR OF LOOP = high order loop with array oriented & not work on map obj
+
+// const arr = [1,2,3,4,5,6,7];
+// const arr = ["hi","hello","new","happy"]
+
+// for (const newArray of arr) {
+//     console.log(newArray);
+    
+// }
+
+//  const arr = [1,2,3,4,5,6,7];
+
+//  for (const newArr in arr) {
+//     if (Object.prototype.hasOwnProperty.call(arr, newArr)) {
+//         const element = arr[newArr];
+//         console.log(arr);
+        
+//     }
+//  }
+//Map = is obj holds in key=value pair keep insertion order o/p will be  obj, with for of o/p indivual ARR, FOR OF not work on obj, for in not iterateble
+// const map = new Map()
+// map.set('x',"20")
+// map.set('y',"30")
+// map.set('z',"40").
+
+// console.log(map);
+
+// for (const newMap of map) {
+//     console.log(newMap);
+    
+// }
+// FOR IN loop = outpt will be key used on obj
+// const myObj = {
+//     1: "a",
+//     2: "b",
+//     3: "c",
+//     4: "d"
+// }
+// for (const key in myObj) {
+//     // console.log(key);
+//     // console.log(myObj[key]);
+//     console.log(`${key} the values are ${myObj[key]}`);
+    
+// }
+
+// FOR IN ON Array
+// const arr = [8,6,3,4,5,6]
+
+// for (const key in arr) {
+//     console.log(key); // index value
+//     console.log(arr[key]); // arr val
+    
+// }
+
+//Array has its own key(index)
+// diff b/w FOR OF & FOR IN
+// for of default o/p will value & for in o/p will be key
 //{{{{{{{{{{{{{{{{{{[[[[[[[]]]]]]]}}}}}}}}}}}}}}}}}} while loops - declares the initializer outside the loop next
 //  condition expresion after the console USE when u know the condition
 // const names = ['krishna', 'kicha', 'hero'];
