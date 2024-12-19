@@ -360,6 +360,123 @@
 //Array has its own key(index)
 // diff b/w FOR OF & FOR IN
 // for of default o/p will value & for in o/p will be key
+
+// FOREACH loop = takes arg as fun mostly used in arr to iterate on val & no return val
+// const coding = ["html", "css", "js", "java"]
+
+// coding.forEach( function (val) {
+//     console.log(val);
+// } )
+
+// // arrow
+// coding.forEach( (item) => {
+//     console.log(item);
+// } )
+
+// another fun as arg 
+// function funToforEach(val) {
+//     console.log(val);
+// }
+
+// coding.forEach(funToforEach)
+
+// foreach has builtin method
+// coding.forEach( (item, index, arr) => {
+//     console.log(item, index, arr);
+// } )
+
+// foreach with arr of obj
+// const myList = [
+//     {
+//         languageName: "js",
+//         languageFullname: "javascript"
+//     },
+//     {
+//         languageName: "sql",
+//         languageFullname: "structure query lang"
+//     },
+//     {
+//         languageName: "py",
+//         languageFullname: "python"
+//     }
+// ]
+// myList.forEach( (item) => {
+//     console.log(item.languageName);
+// } )
+
+// diff b/w foreach & filter 
+// foreach wont return val & filter does
+
+// FILTER method it return val when fun is declared must return the fun val
+// const myNums = [1,2,3,4,5,6,7,8,9,10]
+
+// whenever we open scope must use return 
+// const newNums = myNums.filter( (num) => {
+//     return num > 5
+//     //or
+//     // (num) => num > 5
+// })
+// console.log(newNums);
+
+// above method with FOREACH 
+// const newNums = []
+// myNums.forEach( (num) => {
+//     if (num > 4) {
+//         newNums.push(num)
+//     }
+// })
+// console.log(newNums);
+
+// ARR with Map
+// const myArr = [1,2,3,4,5,6,7,8,9,10]
+
+// const newArr = myArr.map( (num) => num + 10)
+    // CHAINING
+// const newArr = myArr
+//                .map( (num) => num *10)
+//                .map( (num) => num +1)
+//                .filter( (num) => num > 50)
+
+// console.log(newArr);
+
+//REDUCE method used to perform some task on arr obj takes 2 parameters (accumalator, current value) & immidiate after scope must initialize the value(initial val)
+// const myArr = [1,2,3,4]
+
+//const newArr = myArr.reduce( (accumulator,currentVal) => accumulator+currentVal, 0) //initial val 0+1 1+2  3+3 6+4
+
+// const newArr = myArr.reduce( function(accumulator, currentVal)  {
+//         console.log(`acc ${accumulator} and curr ${currentVal}`);
+//         return accumulator + currentVal
+// },0)
+// console.log(newArr);
+
+// const shopping = [
+//     {
+//             vegetable: "tomato",
+//             price: 40
+//     },
+//     {
+//         vegetable: "potato",
+//         price: 80
+//     },
+//     {
+//         vegetable: "cabbage",
+//         price: 60
+//     },
+//     {
+//         vegetable: "carrot",
+//         price: 120
+//     },
+// ]
+
+// const totalPrice = shopping.reduce( (acc,item) => acc + item.price, 0);
+// console.log(totalPrice);
+
+// const totalPrice = shopping.reduce( function (a,b) {
+//         return a+b.price
+// },0)
+// console.log(totalPrice);
+
 //{{{{{{{{{{{{{{{{{{[[[[[[[]]]]]]]}}}}}}}}}}}}}}}}}} while loops - declares the initializer outside the loop next
 //  condition expresion after the console USE when u know the condition
 // const names = ['krishna', 'kicha', 'hero'];
