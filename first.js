@@ -997,14 +997,37 @@
 // userOne.age = 30;
 // console.log(userOne,userTwo);
 
+// ------------------------------------
+
 // DOM- document object model = it describes the html pages as hierarchical tree  of nodes  created by the browser 
-// html is root node or how a document lookks in a visual way too
+// html is root node or how a document looks in a visual way too
+
+// IN CONSOLE to extract elements = getElementById, getElementByClassName, getElementByTagName, querySelector, querySelectorAll
+
+// change element value we need to store in var
+// const title = document.getElementById('title')
+// title.style.backgroundColor = "orange"
+
+// ===================to extract content / text
+
+// title.innerText = "hello world" - only display visibal text(text the original text same to all below )
+// title.innerTextontent = display hidden text of element like display: none & <span>
+// title.innerHTML = = display all html properties & support html tags to manipulate & all style tags
 
 //-------------------- queryselector 
+// select the first element <h1>
 // const para = document.querySelector('p');
 // console.log(para);
 
+// ================== queryselectorAll
+// select all tags & return NODELIST (preferd with FOREACH) its not completly arr but must provide index value to select element
 // const paras = document.querySelectorAll('p');
+
+// console
+// paras.forEach(function (val) {
+//     val.style.backgroundColor = 'blue'
+// })
+
 // console.log(paras);
 
 // const para1 = document.querySelector('div.name');
@@ -1012,9 +1035,14 @@
 
 //------------------------ getElementById
 // const head = document.getElementById('first');
-// console.log(head);
+// // console.log(head);
 
-//---------------------- getElementsByClassName
+//---------------------- getElementsByClassName 
+// In CONSOLE we get HTMLCollection( to perform arr op (map, foreach) we need to convert into arr)
+// -------------------
+// HTMLCollection to ARRAY
+// Array.from(hero) without ''
+
 // const hero = document.getElementsByClassName('error');
 // console.log(hero);
 // console.log(hero[0]);
@@ -1026,7 +1054,7 @@
 
 // const para = document.querySelector('p');
 
- // u can change the html content with innerText &
+ // u can change the html content with innerText & innerHTML
 // para.innerText = 'hello world';
 
 // console.log(para.innerText);
@@ -1055,8 +1083,9 @@
 //--------------------------- GET & SET Attributes
 
 // const link = document.querySelector('a');
-
 // console.log(link.getAttribute('href'));
+// setAttribute always overrides val
+
 // link.setAttribute('href', 'https://www.youtube.com');
 // link.innerText = 'youtube';
 
