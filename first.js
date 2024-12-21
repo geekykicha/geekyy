@@ -1152,7 +1152,7 @@
 // console.log(title.previousElementSibling);
 // console.log(title.nextElementSibling.parentElement.children);
 
-//-------------------- Event basics
+//-------------------- Event basics 
 // const button = document.querySelector('button');
 
 // button.addEventListener('click', () => {
